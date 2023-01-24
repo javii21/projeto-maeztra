@@ -1,0 +1,12 @@
+{
+  "name": "maeztra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cliente.js",
+  "scripts": {
+    "start":"sass ./src/sass/styles.scss:./src/css/styles.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
