@@ -18,7 +18,7 @@
   <br>
 
   <p align="center">
-    <img alt="" src=".github/Desktop Newsletter.jpg" width="100%">
+    <img alt="" src=".github/Desktop.jpg" width="100%">
   </p>
 
 ## 🚀 Tecnologias

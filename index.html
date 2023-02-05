@@ -1,23 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- link css start -->
-  <link rel="stylesheet" href="./src/css/styles.css">
-  <!-- link css end -->
-  <!-- link fonts start -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
-  <!-- link fonst and -->
-  <title>Maeztra</title>
-</head>
-<body>
-  <div id="rootElement"></div>
-  <!-- JavaScript start -->
-  <script src="./src/cliente.js"></script>
-  <!-- JavaScript and -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    link
+    <!-- link css start -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <!-- link css end -->
+    
+    <!-- link fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link fonst and -->
+    <title>Maeztra</title>
+  </head>
+  <body>
+    <div id="rootElement"></div>
+
+    <header class="header">
+      <div class="topBar">
+        <div class="topBar__box">
+          <ul class="mailBoxADay">
+            <li class="mail">
+              <a class="message" href="#">
+                Acompanhe as melhores promoções disponíveis aqui na Maeztra.
+              </a>
+            </li>
+            <li class="mail">
+              <a class="message" href="#">
+                Acompanhe as melhores promoções disponíveis aquina Maeztra.
+              </a>
+            </li>
+            <li class="mail">
+              <a class="message" href="#">
+                Acompanhe as melhores promoções disponíveis aqui na Maeztra.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <button class="buttonOpenMenu" onClick="openClose(this)">
+          <img src="./src/assets/drawer.svg" alt="Botão abrir menu " />
+        </button>
+
+        <img
+          class="logoMaeztra"
+          src="./src/assets/logo.svg"
+          alt="Logo Maeztra"
+        />
+
+        <button class="bottonOpenSearchMobil">
+          <img
+            class="boxSearch__img"
+            src="./src/assets/icon-search.svg"
+            alt="icone de buscar"
+          />
+        </button>
+
+        <form class="boxSearch">
+          <input
+            class="boxSearch__search"
+            type="search"
+            placeholder="O Que Você Busca?"
+          />
+          <button class="boxSearch__botton" type="submit">Buscar</button>
+        </form>
+
+        <nav class="login">
+          <button class="buttonOpenMenuLogins">
+            <img
+              src="./src/assets/icon-soppingBag.svg"
+              alt="Botao abrir menu de logins"
+            />
+          </button>
+          <ul class="list">
+            <li class="list__item">
+              <a class="list__link" href="#">
+                <img
+                  class="list__img"
+                  src="./src/assets/icon-user.svg"
+                  alt="icone de Usuario"
+                />
+                Minha Conta
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">
+                <img
+                  class="list__img"
+                  src="./src/assets/icon-heart.svg"
+                  alt=""
+                />
+                Meu Favorito
+              </a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">
+                <img
+                  class="list__img"
+                  src="./src/assets/icon-soppingBag.svg"
+                  alt=""
+                />
+                Meu Carrinho
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="menuNavigation">
+        <button class="menuNavigation__buttonClose" onClick="openClose(this)">
+          <img
+            class="menuNavigation__buttonClose--img"
+            src="./src/assets/imgX.svg"
+            alt="Imagem do botão Fechar "
+          />
+        </button>
+        <ul class="menuNavigation__contentList">
+          <li class="menuNavigation__item">
+            <img src="./src/assets/icon-dress.svg" alt="icone de Novidades" />
+            <a class="menuNavigation__link" href="#">
+              Novidades
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              Vestidos
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              Roupas
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              Sapatos
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              Lingerie
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              Acessórios
+            </a>
+          </li>
+          <li class="menuNavigation__item">
+            <a class="menuNavigation__link" href="#">
+              OUTLET
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="banner">
+        <div class="hero">
+          <img
+            class="hero__img"
+            src="./src/images/banner01.png"
+            alt="imagen de modelo mostrando ropa em moda"
+          />
+          <div class="hero__text">
+            <h2>Promoções de Outono</h2>
+            <p>
+              Confiras os melhores looks para combinar com você nesse Outono
+            </p>
+            <a href="#">Conferir</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- JavaScript start -->
+    <script src="./src/cliente.js"></script>
+    <!-- JavaScript and -->
+
+    
+    <!-- JavaCript Bootstrap end  -->
+  </body>
 </html>

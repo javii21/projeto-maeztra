@@ -1,10 +1,15 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: $colorWhite;
   font-family: 'Titillium Web', sans-serif;
   font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
 }

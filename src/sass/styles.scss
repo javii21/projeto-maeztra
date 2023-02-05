@@ -1,3 +1,18 @@
-@import"./component/variables.scss";
-@import"./component/general.scss";
-@import "./component/newsletter.scss";
+@import"./components/variables.scss";
+@import"./components/general.scss";
+
+// Modal newsletter start
+@import"./components/newsletter.scss";
+// Modal newsletter and
+
+// TopBar start
+@import"./components/topBar.scss";
+// TopBar and
+
+// Header start
+@import"./components/header.scss";
+// Header and
+
+// Main start
+@import"./components/main.scss";
+// Main and

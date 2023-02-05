@@ -67,3 +67,21 @@ root && root.insertAdjacentHTML('afterbegin', `
 
 </div>
 `);
+
+
+
+
+const openClose = () => {
+  const elementMenu = document.querySelector(".menuNavigation");
+
+  if (elementMenu) {
+    elementMenu.classList.toggle('close');
+  }
+}
+
+
+
+
+
+
+

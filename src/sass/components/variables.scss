@@ -1,0 +1,61 @@
+// Color Tablet
+
+
+$colorWhite:#FFFFFF;
+$colorBlack:rgba(0, 0, 0, .7);
+$colorBlack2: #353535;
+$colorGray:#787D83;
+$colorGray2: #C4C4C4;
+$colorgray3: #464B54;
+$colorYellow: #FAA500;
+
+
+// Styles Botton Menu
+
+@mixin bottonMenuMobile {
+  font-size: 0px;
+  border: none;
+  background-color: $colorWhite;
+  padding: 15px;
+}
+
+
+//  Media Queries 
+
+@mixin xs {
+  @media (max-width: 689px) {
+    @content;
+  }
+}
+
+@mixin ms {
+  @media (max-width: 790px) {
+    @content;
+  }
+}
+
+@mixin ms-l1 {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 950px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// Class

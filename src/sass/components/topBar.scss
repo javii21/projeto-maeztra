@@ -1,0 +1,47 @@
+.topBar {
+  width: 100%;
+  background-color: $colorBlack2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+
+    .mailBoxADay {
+
+      .mail {
+
+
+        height: 34px;
+        display: flex;
+        align-items: center;
+
+
+        .message {
+          color: $colorWhite;
+          display: inline-block;
+          font-family: "Titillium Web", sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          text-decoration: none;
+          line-height: 18px;
+          align-items: center;
+
+
+        }
+
+        &:nth-child(2n) {
+
+          display: none;
+        }
+
+        &:last-child {
+
+          display: none;
+        }
+      }
+    }
+  }
+
+
+}

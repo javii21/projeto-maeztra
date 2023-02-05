@@ -1,32 +1,33 @@
-.WrapperNewsletter{
+.WrapperNewsletter {
   width: 100%;
   height: 100vh;
-  background-color:$colorBlack;
-  
-  .box{
+  background-color: $colorBlack;
+  display: none;
+
+  .box {
     max-width: 848px;
-    width:84.7%;
+    width: 84.7%;
     position: fixed;
-    top:50%;
+    top: 50%;
     left: 50%;
     background-color: $colorWhite;
-    
+
     display: flex;
 
 
     transform: translate(-50%, -50%);
 
-    @include ms{
+    @include ms {
       justify-content: space-between;
     }
 
-    @include xs{
+    @include xs {
       width: 298px;
       justify-content: center;
 
     }
 
-    .buttonModalClose{
+    .buttonModalClose {
       font-family: 'Lato', sans-serif;
       font-size: 12px;
       font-weight: 400;
@@ -41,19 +42,19 @@
       text-decoration: none;
     }
 
-    .img{
+    .img {
       width: 50%;
 
-      @include ms{
+      @include ms {
         width: 40%;
       }
 
-      @include xs{
+      @include xs {
         display: none;
       }
     }
 
-    .form{
+    .form {
 
       width: 50%;
       display: flex;
@@ -62,30 +63,30 @@
       align-items: center;
       gap: 12px;
 
-      @include ms{
+      @include ms {
         width: 60%;
       }
 
-      @include xs{
+      @include xs {
         width: 100%;
         padding: 22px;
-        
+
       }
 
-      &__img{
+      &__img {
         width: 28px;
         height: 29.66px;
         margin-bottom: 5.66px;
 
-        @include xs{
+        @include xs {
           width: 23.33px;
           height: 19.77px;
-          margin-top:22.94px;
+          margin-top: 22.94px;
         }
       }
 
-      &__paragraph{
-        color:$colorgray3;
+      &__paragraph {
+        color: $colorgray3;
         font-family: 'Titillium Web', sans-serif;
         font-weight: 400;
         font-size: 12px;
@@ -94,13 +95,13 @@
         text-transform: uppercase;
         margin-bottom: .71px;
 
-        @include xs{
+        @include xs {
           width: 163px;
           margin: 0px;
         }
       }
 
-      &__titleDiscounts{
+      &__titleDiscounts {
         width: 260px;
         color: $colorGray;
         font-family: 'Titillium Web', sans-serif;
@@ -112,41 +113,41 @@
         text-align: center;
         margin-bottom: 13.42px;
 
-        strong{
+        strong {
           display: contents;
         }
 
-        @include xs{
+        @include xs {
           width: 258px;
-          font-size:18px;
+          font-size: 18px;
         }
-      
+
       }
 
-      &__inputEmail{
+      &__inputEmail {
         width: 322px;
         padding: 10px 13px;
         margin-bottom: .5px;
-        
+
         font-family: 'Titillium Web', sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 20px;
 
         border: 1px solid $colorGray2;
-      
+
         border-radius: 10px;
-      
+
         outline: none;
 
-        @include ms{
+        @include ms {
           width: 258px;
-    
+
         }
       }
 
-      &__button{
-        width:322px;
+      &__button {
+        width: 322px;
         padding: 10px 0px;
         background-color: $colorYellow;
         color: $colorWhite;
@@ -155,7 +156,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        gap:8px;
+        gap: 8px;
         cursor: pointer;
         text-transform: uppercase;
         font-size: 12px;
@@ -167,14 +168,15 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        
-        @include ms{
+
+        @include ms {
           width: 258px;
-    
+
         }
+
         //img{
 
-    //     }
+        //     }
       }
     }
   }
